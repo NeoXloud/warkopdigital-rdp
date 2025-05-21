@@ -20,7 +20,7 @@ remaining_days=$((remaining_seconds / 86400))
 
 # Ask for the secret key before proceeding
 echo -e "${MAGENTA} ┌────────────────────────────────────────────────────────────────────────────────────────┐ ${NC}"
-echo -e "${MAGENTA} │${NC}             ${CYAN}Please enter your secret key to unlock the script${NC}            ${MAGENTA}│ ${NC}"
+echo -e "${MAGENTA} │${NC}             ${CYAN}Silahkan Masukan Key Anda ${NC}            ${MAGENTA}│ ${NC}"
 echo -e "${MAGENTA} └────────────────────────────────────────────────────────────────────────────────────────┘ ${NC}"
 
 read -sp "Enter the key: " input_key
@@ -36,8 +36,8 @@ fi
 echo -e "${MAGENTA} ┌────────────────────────────────────────────────────────────────────────────────────────┐ ${NC}"
 echo -e "${MAGENTA} │${NC}              ${YELLOW}Server Information${NC}                ${MAGENTA}│ ${NC}"
 echo -e "${MAGENTA} ├────────────────────────────────────────────────────────────────────────────────────────┤ ${NC}"
-echo -e "${MAGENTA} │${NC} ${CYAN}Version       : 1.0 WD${NC}                            ${MAGENTA}│ ${NC}"
-echo -e "${MAGENTA} │${NC} ${CYAN}Creator       : Warkop Digital${NC}                   ${MAGENTA}│ ${NC}"
+echo -e "${MAGENTA} │${NC} ${CYAN}Version       : 1.0 NX${NC}                            ${MAGENTA}│ ${NC}"
+echo -e "${MAGENTA} │${NC} ${CYAN}Creator       : Kios Digital${NC}                   ${MAGENTA}│ ${NC}"
 echo -e "${MAGENTA} │${NC} ${CYAN}Client Name   : Windows RDP${NC}                      ${MAGENTA}│ ${NC}"
 echo -e "${MAGENTA} │${NC} ${CYAN}Provider      : DigitalOcean${NC}                     ${MAGENTA}│ ${NC}"
 echo -e "${MAGENTA} │${NC} ${CYAN}Expiry In     : ${remaining_days} days remaining${NC}               ${MAGENTA}│ ${NC}"
@@ -61,7 +61,7 @@ read -p "Pilih (1-6): " pilihan
 # URLs for the different Windows versions
 case $pilihan in
     1)
-        PILIHOS="https://sourceforge.net/projects/nixpoin/files/windows2012.gz"
+        PILIHOS="https://downloads.sourceforge.net/project/nixpoin/windows2012.gz?ts=gAAAAABoLlVVy4d5mYdRRtsJK1VFFSu4OO2v3UPn3GVj0LrN1yhpnNgCb-FDsSwBrMO1A6TIm4iom5wJZkGxq8rMpjRjyNx15A%3D%3D&use_mirror=master&r="
         echo -e "${CYAN}Memulai instalasi Windows 2012...${NC}"
         ;;
     2)
