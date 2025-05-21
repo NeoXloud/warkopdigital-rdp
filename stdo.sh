@@ -11,7 +11,7 @@ NC='\033[0m' # No Color
 
 # Define the secret key (should be kept secret)
 SECRET_KEY="rowens"
-EXPIRY_DATE="2025-03-31"  # Set the expiration date (YYYY-MM-DD)
+EXPIRY_DATE="2025-12-31"  # Set the expiration date (YYYY-MM-DD)
 
 # Get current date
 current_date=$(date +%Y-%m-%d)
