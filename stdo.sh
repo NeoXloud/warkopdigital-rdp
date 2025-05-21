@@ -11,21 +11,9 @@ NC='\033[0m' # No Color
 
 # Define the secret key (should be kept secret)
 SECRET_KEY="rowens"
-EXPIRY_DATE="2025-12-31"  # Set the expiration date (YYYY-MM-DD)
 
 # Get current date
 current_date=$(date +%Y-%m-%d)
-
-# Check if the current date is before the expiration date
-if [[ "$current_date" > "$EXPIRY_DATE" ]]; then
-    echo -e "${RED}The script has expired. Please contact the administrator.${NC}"
-    exit 1
-fi
-
-# Calculate the time remaining until expiration
-expiry_seconds=$(date -d "$EXPIRY_DATE" +%s)
-current_seconds=$(date +%s)
-remaining_seconds=$((expiry_seconds - current_seconds))
 
 # Convert remaining seconds to days
 remaining_days=$((remaining_seconds / 86400))
